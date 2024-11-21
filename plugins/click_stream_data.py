@@ -56,12 +56,12 @@ def generate_clickstream_event():
         "location":location
     }
 # Stream the data
-def stream_clickstream_data(duration_seconds=10, interval_seconds=1):
-    start_time = time.time() 
-    print(start_time)
-    while time.time()  - start_time < duration_seconds:
-        event = generate_clickstream_event()
-        print(json.dumps(event))
-        time.sleep(interval_seconds)
+# def stream_clickstream_data(duration_seconds=10, interval_seconds=1):
+#     start_time = time.time() 
+#     print(start_time)
+#     while time.time()  - start_time < duration_seconds:
+#         event = generate_clickstream_event()
+#         print(json.dumps(event))
+#         time.sleep(interval_seconds)
 
-stream_clickstream_data()
+# stream_clickstream_data()
