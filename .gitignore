@@ -2,3 +2,4 @@ click-stream-env
 logs
 __pycache__
 dags/__pycache__
+.vscode
