@@ -55,7 +55,7 @@ def generate_clickstream_event():
         "device_type": device,
         "location":location
     }
-# Stream the data
+# Let's test
 # def stream_clickstream_data(duration_seconds=10, interval_seconds=1):
 #     start_time = time.time() 
 #     print(start_time)
