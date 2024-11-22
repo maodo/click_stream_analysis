@@ -106,9 +106,9 @@ services:
       POSTGRES_PASSWORD: pass123
       POSTGRES_DB: clickstream
     ports:
-      - 5433:5433
+      - 5433:5432
     volumes:
-      - postgres-db-volume-1:/var/lib/postgresql/data
+      - postgres-db-volume-2:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "maodo"]
       interval: 10s
@@ -224,4 +224,4 @@ services:
       - airflow
 volumes:
   postgres-db-volume:
-  postgres-db-volume-1:
+  postgres-db-volume-2:

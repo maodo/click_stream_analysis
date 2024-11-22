@@ -18,15 +18,15 @@ db = Database(**db_config)
 def create_events_table():
     create_table_query = """
     CREATE TABLE IF NOT EXISTS events(
-        user_id VARCHAR(40) PRIMARY KEY,
+        user_id VARCHAR(40),
         session_id VARCHAR(40),
-        timestamp TIMESTAMP,
+        timestamp VARCHAR(255),
         event_type VARCHAR(15),
         url VARCHAR(40),
-        referrer_url VARCHAR(35),
-        user_agent VARCHAR(25),
-        device_type VARCHAR(25),
-        location VARCHAR(25)
+        referrer_url VARCHAR(40),
+        user_agent VARCHAR(40),
+        device_type VARCHAR(40),
+        location VARCHAR(40)
     )
     """
     db.connect()
