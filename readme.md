@@ -63,7 +63,21 @@ This project demonstrates a complete end-to-end pipeline  for managing real-time
    Streamlit queries PostgreSQL in real time and renders key business metrics.
 
 ---
+## **Metrics Tracked**
+- **Most Popular Pages**: Top pages by user visits.
+- **Clicks Per Page**: Number of clicks for each page.
+- **Most Added to Cart Products**: Products frequently added to users' carts.
 
+---
+
+## **Future Enhancements**
+- Migrate to **Cassandra** and **Apache Spark** for scalable storage and distributed processing.
+- Implement **event deduplication** using Kafka Streams or ksqlDB.
+- Add **real-time alerts** for unusual user behaviors using Python or Spark Streaming.
+- Use **CI/CD pipelines** to deploy the dashboard and services automatically.
+
+
+---
 ## **Setup Instructions**
 
 ### **Prerequisites**
@@ -73,3 +87,9 @@ This project demonstrates a complete end-to-end pipeline  for managing real-time
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/maodo/clic_kstream-analysis.git
+```
+
+---
+
+## **License**
+This project is licensed under the MIT License. See the `LICENSE` file for details.
